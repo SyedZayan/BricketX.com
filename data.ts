@@ -55,8 +55,8 @@ export const portfolioCompanies = [
     logo: "/images/bricketx-pk-logo.png",
     description: "Our dedicated regional division spearheading digital transformation, tech infrastructure, and localized software solutions for the rapidly expanding Asian market.",
     features: ["Digital Transformation", "Custom Software", "Cloud Infrastructure", "Regional IT Support"],
-    link: "https://bricketx.pk",
-    image: "/images/Portfolio/mintrix-contract.png"
+    link: "https://bricketx-pk.vercel.app/",
+    image: "/images/Portfolio/bricketx.pk.png"
   },
   {
     // NEW ADDITION
@@ -74,8 +74,8 @@ export const portfolioCompanies = [
 
 export const teamMembers = [
   { name: "Raheel Sajid", role: "Founder & CEO", initials: "SA", image: "/images/team-raheel.jpeg" },
-  { name: "Mohammad", role: "Managing Director", initials: "JD", image: "/images/team-raheel.jpeg" },
-  { name: "Mohammad", role: "Head of Operations", initials: "SC", image: "/images/team-raheel.jpeg" },
+  { name: "Muzzamil Ahmed", role: "Co-Founder / Managing Director", initials: "JD", image: "/images/team-muzzamil.png" },
+  { name: "Mohammad", role: "Head of Operations", initials: "SC", image: "/images/.jpeg" },
 
 ];
 
