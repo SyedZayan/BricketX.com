@@ -4,13 +4,20 @@ import { useState, useEffect } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 
+// Quick data array for the dropdown items
+const companyLinks = [
+  { name: "Mintrix Contracting", desc: "Construction & Engineering", href: "https://mintrixcontracting.com" },
+  { name: "Mintrix Maintenance", desc: "Facility Management", href: "https://mintrixmaintenance.com" },
+  { name: "Mintrix Mining", desc: "Digital Infrastructure", href: "https://mintrix-mining.vercel.app" },
+  { name: "BricketX.pk", desc: "Regional Tech Solutions", href: "https://bricketx.pk" },
+];
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Listen for scroll events
   useEffect(() => {
     const handleScroll = () => {
-      // If we scroll down more than 20 pixels, trigger the "scrolled" state
       if (window.scrollY > 20) {
         setIsScrolled(true);
       } else {
@@ -26,7 +33,7 @@ export default function Header() {
     <header 
       className={`w-full flex justify-center sticky top-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'py-3 bg-bricket-white/90 backdrop-blur-lg shadow-sm border-b border-transparent' 
+          ? 'py-3 bg-bricket-white/95 backdrop-blur-lg shadow-sm border-b border-bricket-grey/10' 
           : 'py-5 bg-bricket-white border-b border-bricket-grey/20'
       }`}
     >
@@ -47,20 +54,65 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8 text-bricket-dark font-medium">
-          <div className="group relative">
-            <button className="flex items-center gap-1 hover:text-bricket-gold transition-colors py-2">
+        <nav className="hidden lg:flex items-center gap-8 text-bricket-dark font-medium h-full">
+          
+          {/* OUR COMPANIES DROPDOWN */}
+          <div className="group relative h-full flex items-center">
+            <button className="flex items-center gap-1.5 hover:text-bricket-gold transition-colors py-2 outline-none">
               Our Companies
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+              {/* Arrow rotates smoothly on hover */}
+              <svg className="w-4 h-4 text-bricket-grey group-hover:text-bricket-gold transition-transform duration-300 group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </button>
+
+            {/* The Floating Dropdown Menu */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-72 bg-bricket-white rounded-xl shadow-2xl border border-bricket-grey/15 opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out overflow-hidden before:absolute before:-top-4 before:left-0 before:w-full before:h-4">
+              {/* Premium Gold Accent Line at the top */}
+              <div className="w-full h-1 bg-bricket-gold"></div>
+              
+              <div className="flex flex-col py-2">
+                {companyLinks.map((company, index) => (
+                  <Link 
+                    key={index} 
+                    href={company.href}
+                    target="_blank"
+                    className="flex flex-col px-6 py-3 hover:bg-bricket-grey/5 transition-colors group/link"
+                  >
+                    <span className="text-sm font-bold text-bricket-dark group-hover/link:text-bricket-gold transition-colors">
+                      {company.name}
+                    </span>
+                    <span className="text-xs text-bricket-grey mt-0.5">
+                      {company.desc}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
+
           <Link href="/about" className="hover:text-bricket-gold transition-colors py-2">About Us</Link>
-          <div className="group relative">
-            <button className="flex items-center gap-1 hover:text-bricket-gold transition-colors py-2">
+          
+          {/* EXPERTISE DROPDOWN (Placeholder matching the style) */}
+          <div className="group relative h-full flex items-center">
+            <button className="flex items-center gap-1.5 hover:text-bricket-gold transition-colors py-2 outline-none">
               Expertise
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+              <svg className="w-4 h-4 text-bricket-grey group-hover:text-bricket-gold transition-transform duration-300 group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </button>
+            
+            {/* Simple Dropdown for Expertise */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-56 bg-bricket-white rounded-xl shadow-2xl border border-bricket-grey/15 opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out overflow-hidden before:absolute before:-top-4 before:left-0 before:w-full before:h-4">
+              <div className="w-full h-1 bg-bricket-gold"></div>
+              <div className="flex flex-col py-2">
+                <Link href="#construction" className="px-6 py-2.5 text-sm font-semibold text-bricket-dark hover:text-bricket-gold hover:bg-bricket-grey/5 transition-colors">Construction</Link>
+                <Link href="#maintenance" className="px-6 py-2.5 text-sm font-semibold text-bricket-dark hover:text-bricket-gold hover:bg-bricket-grey/5 transition-colors">Maintenance</Link>
+                <Link href="#digital" className="px-6 py-2.5 text-sm font-semibold text-bricket-dark hover:text-bricket-gold hover:bg-bricket-grey/5 transition-colors">Digital Growth</Link>
+              </div>
+            </div>
           </div>
+
           <Link href="/careers" className="hover:text-bricket-gold transition-colors py-2">Careers</Link>
         </nav>
 

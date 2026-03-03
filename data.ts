@@ -50,24 +50,26 @@ export const portfolioCompanies = [
     image: "/images/Portfolio/maintenance1.png"
   },
   {
-    number: "03",
-    name: "BricketX.pk",
-    logo: "/images/bricketx-pk-logo.png",
-    description: "Our dedicated regional division spearheading digital transformation, tech infrastructure, and localized software solutions for the rapidly expanding Asian market.",
-    features: ["Digital Transformation", "Custom Software", "Cloud Infrastructure", "Regional IT Support"],
-    link: "https://bricketx-pk.vercel.app/",
-    image: "/images/Portfolio/bricketx.pk.png"
-  },
-  {
-    // NEW ADDITION
-    number: "04",
+      number: "03",
     name: "Mintrix Mining",
     logo: "/images/mintrix-mining-logo.png",
     description: "A hub of computational innovation. We build high-performance cryptocurrency and industrial mining infrastructure, bridging raw power with intelligent efficiency for maximum profitability.",
     features: ["Sustainable Energy Integration", "Tier-III Security Protocols", "Optimized Hashrate Performance", "24/7 Technical Response"],
     link: "https://mintrix-mining.vercel.app/",
     image: "/images/Portfolio/mining.png" 
-  }
+  },
+  
+  {
+    number: "04",
+    name: "Bricketx.pk",
+    logo: "/images/bricketx-pk-logo.png",
+    description: "Our dedicated regional division spearheading digital transformation, tech infrastructure, and localized software solutions for the rapidly expanding Asian market.",
+    features: ["Digital Transformation", "Custom Software", "Cloud Infrastructure", "Regional IT Support"],
+    link: "https://bricketx.pk",
+    image: "/images/Portfolio/bricketx.pk.png"
+  },
+  
+
 ];
 
 

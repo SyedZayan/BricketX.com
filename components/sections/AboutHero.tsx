@@ -21,10 +21,10 @@ export default function AboutHero() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full h-[400px]">
           <div className="relative w-full h-full rounded-2xl overflow-hidden bg-bricket-grey/10 col-span-1 md:col-span-2">
             {/* Replace src with your actual corporate team/building image */}
-            <Image src="/images/about-hero-1.jpg" alt="Corporate Team" fill className="object-cover" />
+            <Image src="/images/team.jpg" alt="Corporate Team" fill className="object-cover" />
           </div>
           <div className="relative w-full h-full rounded-2xl overflow-hidden bg-bricket-dark/10 hidden md:block">
-            <Image src="/images/about-hero-2.jpg" alt="Construction Site" fill className="object-cover" />
+            <Image src="/images/team.jpg" alt="Construction Site" fill className="object-cover" />
           </div>
         </div>
 
