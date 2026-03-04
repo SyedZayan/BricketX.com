@@ -77,7 +77,7 @@ export const portfolioCompanies = [
 export const teamMembers = [
   { name: "Raheel Sajid", role: "Founder & CEO", initials: "SA", image: "/images/team-raheel.jpeg" },
   { name: "Muzzamil Ahmed", role: "Co-Founder / Managing Director", initials: "JD", image: "/images/team-muzzamil.png" },
-  { name: "Mohammad", role: "Head of Operations", initials: "SC", image: "/images/.jpeg" },
+  //{ name: "Mohammad", role: "Head of Operations", initials: "SC", image: "/images/.jpeg" },
 
 ];
 
