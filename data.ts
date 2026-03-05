@@ -75,8 +75,8 @@ export const portfolioCompanies = [
 
 
 export const teamMembers = [
-  { name: "Raheel Sajid", role: "Founder & CEO", initials: "SA", image: "/images/team-raheel.jpeg" },
-  { name: "Muzzamil Ahmed", role: "Co-Founder / Managing Director", initials: "JD", image: "/images/team-muzzamil.png" },
+  { name: "Raheel Sajid", role: "Co-Founder & Executive Director", initials: "RS", image: "/images/team-raheel.jpeg" },
+  { name: "Muzzamil Ahmed", role: "Co-Founder & Managing Director", initials: "MA", image: "/images/team-muzzamil.jpeg" },
   //{ name: "Mohammad", role: "Head of Operations", initials: "SC", image: "/images/.jpeg" },
 
 ];
@@ -86,7 +86,7 @@ export const blogPosts = [
     category: "Corporate",
     title: "Mintrix Contracting secures new commercial project",
     excerpt: "We are expanding our footprint with a major new infrastructure development initiative set to launch this quarter.",
-    author: "Raheel",
+    author: "Taylor",
     date: "Feb 27, 2026",
     image: "/images/blog-1.jpg" 
   },
@@ -94,15 +94,15 @@ export const blogPosts = [
     category: "Insights",
     title: "The future of sustainable facility maintenance",
     excerpt: "How Mintrix Maintenance is integrating green technologies to reduce carbon footprints across our managed properties.",
-    author: "Sarah Connor",
+    author: "Micheal",
     date: "Feb 20, 2026",
-    image: "/images/blog-2.jpg"
+    image: "/images/blog2.jpg"
   },
   {
     category: "Regional",
     title: "BricketX.pk expands digital service offerings",
     excerpt: "Our specialized regional division announces a new suite of services tailored to the rapidly growing Pakistani market.",
-    author: "David Miller",
+    author: "David",
     date: "Feb 15, 2026",
     image: "/images/blog-3.jpg"
   }
