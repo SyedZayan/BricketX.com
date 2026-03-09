@@ -75,8 +75,8 @@ export const portfolioCompanies = [
 
 
 export const teamMembers = [
-  { name: "Raheel Sajid", role: "Co-Founder & Executive Director", initials: "RS", image: "/images/team-raheel.jpeg" },
-  { name: "Muzzamil Ahmed", role: "Co-Founder & Managing Director", initials: "MA", image: "/images/team-muzzamil.jpeg" },
+
+  { name: "Raheel Sajid", role: "Founder & CEO", initials: "SA", image: "/images/team-raheel.jpeg" },
   //{ name: "Mohammad", role: "Head of Operations", initials: "SC", image: "/images/.jpeg" },
 
 ];
@@ -187,41 +187,33 @@ export const showcaseRowTwo = [
 ];
 
 //CONTACT INFO
+// --- CONTACT METHODS DATA ---
 export const contactMethods = [
   {
-    iconPaths: [
-      "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z",
-      "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-    ],
-    title: "Our location",
-    line1: "Shah Faisal Town,",
-    line2: "Karachi, Sindh, Pakistan"
+    title: "Global Headquarters",
+    line1: "Level 42, Emirates Towers",
+    line2: "Dubai, United Arab Emirates",
+    iconPaths: ["M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"]
   },
   {
-    iconPaths: [
-      "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-    ],
-    title: "Email us",
-    line1: "corporate@bricketx.com",
-    line2: "support@bricketx.com"
+    title: "Direct Phone",
+    line1: "+971 4 000 0000 (UAE)",
+    line2: "+92 21 0000 0000 (PK)",
+    iconPaths: ["M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"]
   },
   {
-    iconPaths: [
-      "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-    ],
-    title: "Call us",
-    line1: "+92 (000) 123-4567",
-    line2: "+92 (000) 987-6543"
+    title: "Investor Relations",
+    line1: "investors@bricketx.com",
+    line2: "Secure PGP available",
+    iconPaths: ["M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"]
   },
   {
-    iconPaths: [
-      "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-    ],
-    title: "Live chat",
-    line1: "Available 24/7",
-    line2: "Click here to start"
+    title: "Corporate Hours",
+    line1: "Monday - Friday",
+    line2: "09:00 AM - 06:00 PM (GST)",
+    iconPaths: ["M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"]
   }
-];
+];;
 
 
 // Add to the bottom of data.ts
@@ -343,5 +335,179 @@ export const faqs = [
   {
     question: "What are the core values across the BricketX portfolio?",
     answer: "Every company under the BricketX umbrella is bound by a commitment to uncompromising quality, strict safety standards, continuous innovation, and transparent client communication."
+  }
+];
+
+
+// --- INVESTMENT OPPORTUNITIES DATA ---
+export const opportunities = [
+  {
+    id: "fund-01",
+    category: "Real Estate",
+    title: "Mintrix Dubai Villa Development Fund I",
+    status: "Accepting Capital",
+    roi: "18.5%",
+    minInvestment: "$100,000",
+    term: "24 Months",
+    risk: "Moderate",
+    description: "A targeted fund focusing on the acquisition, development, and sale of premium luxury villas in high-demand Dubai neighborhoods.",
+    progress: 65, 
+  },
+  {
+    id: "fund-02",
+    category: "Mining & Commodities",
+    title: "Mintrix Global Gold Consortium",
+    status: "Closing Soon",
+    roi: "22.0%",
+    minInvestment: "$250,000",
+    term: "36 Months",
+    risk: "Moderate-High",
+    description: "Direct capital injection into operational gold mining infrastructure in strategic African regions, hedging against global inflation.",
+    progress: 88,
+  },
+  {
+    id: "fund-03",
+    category: "Real Estate",
+    title: "Sharjah Commercial Infrastructure",
+    status: "Accepting Capital",
+    roi: "12.0%",
+    minInvestment: "$50,000",
+    term: "18 Months",
+    risk: "Low-Moderate",
+    description: "Stable, yield-generating commercial real estate development aimed at the rapidly expanding Sharjah business district.",
+    progress: 30,
+  },
+  {
+    id: "fund-04",
+    category: "Digital Growth",
+    title: "BricketX Tech Infrastructure Pool",
+    status: "Upcoming",
+    roi: "15.0%",
+    minInvestment: "$50,000",
+    term: "48 Months",
+    risk: "Moderate",
+    description: "Funding the expansion of localized data centers, software solutions, and digital transformation services across the Asian market.",
+    progress: 0,
+  }
+];
+
+
+// --- MARKET INSIGHTS DATA ---
+
+export const goldPerformanceData = [
+  { year: "2020", price: "$1,770", growth: "+25.1%" },
+  { year: "2021", price: "$1,800", growth: "+1.7%" },
+  { year: "2022", price: "$1,920", growth: "+6.6%" },
+  { year: "2023", price: "$2,060", growth: "+7.3%" },
+  { year: "2024", price: "$2,150", growth: "+4.4%" },
+];
+
+export const regionalRealEstateData = {
+  uae: [
+    { city: "Dubai", price: "AED 1,450 / sq ft", trend: "Strong Growth", highlights: ["Luxury Villas", "Commercial High-rises"] },
+    { city: "Abu Dhabi", price: "AED 1,200 / sq ft", trend: "Steady", highlights: ["Infrastructure", "Residential Hubs"] },
+    { city: "Sharjah", price: "AED 520 / sq ft", trend: "Emerging", highlights: ["Commercial Real Estate", "Warehousing"] },
+    { city: "Ajman", price: "AED 320 / sq ft", trend: "High Yield", highlights: ["Land Development", "Affordable Housing"] },
+  ],
+  pakistan: [
+    { city: "Islamabad", price: "PKR 14,500 / sq ft", trend: "Strong Growth", highlights: ["Gated Communities", "Commercial Zones"] },
+    { city: "Karachi", price: "PKR 12,000 / sq ft", trend: "High Volume", highlights: ["Scheme 33", "DHA Developments", "Bahria Town"] },
+    { city: "Lahore", price: "PKR 10,200 / sq ft", trend: "Steady", highlights: ["Smart Cities", "Residential Plots"] },
+  ]
+};
+
+
+// --- FIRM MILESTONES DATA ---
+export const firmMilestones = [
+  { 
+    year: "2015", 
+    title: "Firm Inception", 
+    description: "BricketX established as a regional real estate development syndicate focusing on high-yield UAE infrastructure." 
+  },
+  { 
+    year: "2018", 
+    title: "Commodities Expansion", 
+    description: "Successfully launched our first international mineral and gold trading portfolio, securing physical asset hedges." 
+  },
+  { 
+    year: "2022", 
+    title: "Digital & Regional Growth", 
+    description: "Diversified into tech hubs, launching BricketX.pk to capture the explosive South Asian digital and real estate markets." 
+  },
+  { 
+    year: "2026", 
+    title: "Global Institutionalization", 
+    description: "Transitioned into a full-scale real-asset investment platform serving international family offices and institutional capital." 
+  }
+];
+
+// --- CORE VALUES DATA ---
+export const coreValues = [
+  { 
+    title: "Radical Transparency", 
+    description: "Our investors have unhindered access to asset performance, geopolitical market shifts, and immutable financial reporting." 
+  },
+  { 
+    title: "Intrinsic Tangibility", 
+    description: "We do not trade paper promises. Every dollar deployed is backed by physical earth, infrastructure, or hard commodities." 
+  },
+  { 
+    title: "Asymmetric Risk Mitigation", 
+    description: "We engineer portfolios that limit downside exposure through asset diversification while capturing massive emerging market upside." 
+  }
+];
+
+
+// --- OUR PROJECTS PORTFOLIO DATA ---
+export const projectsPortfolio = [
+  {
+    id: "proj-01",
+    title: "Mintrix Palm Villas",
+    category: "Real Estate",
+    location: "Dubai, UAE",
+    status: "Completed",
+    assetValue: "$45.5M",
+    description: "A luxury enclave of 14 ultra-premium waterfront villas. Delivered ahead of schedule with a 22% IRR for early investors.",
+    image: "/images/hero-architecture.jpg" // You can replace these with actual image paths later
+  },
+  {
+    id: "proj-02",
+    title: "Tanzania Extraction Hub",
+    category: "Mining & Commodities",
+    location: "Shinyanga Region, TZ",
+    status: "Operational",
+    assetValue: "$120.0M",
+    description: "A state-of-the-art gold extraction and processing facility operating under strict sustainable mining protocols.",
+    image: "/images/hero-architecture.jpg"
+  },
+  {
+    id: "proj-03",
+    title: "Clifton Corporate Tower",
+    category: "Real Estate",
+    location: "Karachi, PK",
+    status: "Under Construction",
+    assetValue: "$85.0M",
+    description: "A 35-story Grade-A commercial skyscraper designed to house multinational headquarters and leading financial institutions.",
+    image: "/images/hero-architecture.jpg"
+  },
+  {
+    id: "proj-04",
+    title: "BricketX Data Center Alpha",
+    category: "Digital Growth",
+    location: "Islamabad, PK",
+    status: "Operational",
+    assetValue: "$30.0M",
+    description: "A Tier-III certified data center providing robust cloud infrastructure and enterprise hosting for regional tech firms.",
+    image: "/images/hero-architecture.jpg"
+  },
+  {
+    id: "proj-05",
+    title: "Sharjah Logistics Park",
+    category: "Real Estate",
+    location: "Sharjah, UAE",
+    status: "Completed",
+    assetValue: "$62.5M",
+    description: "A massive 500,000 sq ft modern warehousing and logistics hub strategically located near major maritime ports.",
+    image: "/images/hero-architecture.jpg"
   }
 ];

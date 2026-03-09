@@ -1,14 +1,13 @@
-import ContactSection from "../../components/sections/ContactSection";
-
-export const metadata = {
-  title: "Contact Us | BricketX",
-  description: "Get in touch with the BricketX corporate team.",
-};
+import ContactHero from "@/components/sections/ContactHero";
+import OnboardingForm from "@/components/sections/OnboardingForm";
+import ContactInfoAndMap from "@/components/sections/ContactInfoAndMap";
 
 export default function ContactPage() {
   return (
-    <main className="w-full flex flex-col">
-      <ContactSection />
+    <main className="w-full flex flex-col bg-[#fbf8f3] min-h-screen">
+      <ContactHero />
+      <OnboardingForm />
+      <ContactInfoAndMap />
     </main>
   );
 }

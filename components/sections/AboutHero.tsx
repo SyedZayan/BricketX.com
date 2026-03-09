@@ -3,31 +3,22 @@ import Image from 'next/image';
 
 export default function AboutHero() {
   return (
-    <section className="w-full bg-bricket-white py-20 lg:py-32 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-        
-        {/* Intro Text */}
-        <span className="text-bricket-gold font-semibold tracking-wider uppercase text-sm mb-4 block">
-          About BricketX
+    <section className="w-full bg-bricket-dark py-24 lg:py-32 px-6 relative overflow-hidden border-b border-bricket-gold/20">
+      <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/hero-architecture.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-bricket-gold/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+      
+      <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in-up">
+        <span className="text-bricket-gold font-bold tracking-[0.2em] uppercase text-xs sm:text-sm mb-6 flex items-center justify-center gap-4">
+          <span className="w-8 h-[2px] bg-bricket-gold"></span>
+          Firm Overview
+          <span className="w-8 h-[2px] bg-bricket-gold"></span>
         </span>
-        <h1 className="text-4xl md:text-6xl font-extrabold text-bricket-dark tracking-tight mb-8 max-w-4xl">
-          We are the driving force behind <span className="text-bricket-gold">industry leaders.</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-bricket-white tracking-tight mb-8 leading-[1.1]">
+          Architects of generational <span className="text-bricket-gold italic font-light">wealth.</span>
         </h1>
-        <p className="text-xl text-bricket-grey max-w-3xl mb-16 leading-relaxed">
-          BricketX is a premier holding company managing a diverse portfolio of specialized brands. From heavy construction to digital marketing, we provide the resources, strategy, and leadership needed for our subsidiaries to dominate their respective markets.
+        <p className="text-lg md:text-xl text-bricket-grey leading-relaxed max-w-3xl mx-auto">
+          BricketX is a premier holding company and real-asset platform. We bridge the gap between institutional capital and the world’s most secure, high-yield physical assets.
         </p>
-
-        {/* Corporate Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full h-[400px]">
-          <div className="relative w-full h-full rounded-2xl overflow-hidden bg-bricket-grey/10 col-span-1 md:col-span-2">
-            {/* Replace src with your actual corporate team/building image */}
-            <Image src="/images/team.jpg" alt="Corporate Team" fill className="object-cover" />
-          </div>
-          <div className="relative w-full h-full rounded-2xl overflow-hidden bg-bricket-dark/10 hidden md:block">
-            <Image src="/images/team.jpg" alt="Construction Site" fill className="object-cover" />
-          </div>
-        </div>
-
       </div>
     </section>
   );
