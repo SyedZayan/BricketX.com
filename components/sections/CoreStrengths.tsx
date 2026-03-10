@@ -4,20 +4,18 @@ import React, { useState } from 'react';
 import { coreStrengths } from '../../data';
 
 export default function CoreStrengths() {
-  // State to track which accordion tab is currently open (defaults to the first one: 0)
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleAccordion = (index: number) => {
-    // If clicking the already open tab, close it. Otherwise, open the new one.
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <section className="w-full bg-bricket-dark py-24 lg:py-40 px-6 overflow-hidden border-t border-bricket-grey/10 relative">
+    // RESTORED: Deep dark background with subtle top border
+    <section className="w-full bg-bricket-dark py-24 lg:py-40 px-6 overflow-hidden border-t border-bricket-white/5 relative">
       
-      {/* Subtle Background Glow */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-bricket-gold/5 to-transparent pointer-events-none -z-0"></div>
-
+      {/* RESTORED: Subtle Background Glow */}
+<div className="absolute top-0 right-[-10%] w-[60%] h-[80%] rounded-full bg-bricket-gold/5 blur-[150px] pointer-events-none -z-0"></div>
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 relative z-10">
         
         {/* Left Column: Sticky Header */}
@@ -46,24 +44,24 @@ export default function CoreStrengths() {
                 key={index} 
                 className="border-b border-bricket-white/10 last:border-b-0 group"
               >
-                {/* Accordion Header (Clickable) */}
+                {/* Accordion Header */}
                 <button 
                   onClick={() => toggleAccordion(index)}
                   className="w-full flex items-center justify-between py-6 md:py-8 text-left outline-none focus-visible:ring-2 focus-visible:ring-bricket-gold/50 rounded-lg"
                 >
                   <div className="flex items-center gap-6 md:gap-8">
-                    {/* Number */}
-                    <span className={`text-sm md:text-base font-bold tracking-widest transition-colors duration-300 ${isOpen ? 'text-bricket-gold' : 'text-bricket-grey/50 group-hover:text-bricket-grey'}`}>
+                    {/* RESTORED: Ghosted numbers that turn gold */}
+                    <span className={`text-sm md:text-base font-bold tracking-widest transition-colors duration-300 ${isOpen ? 'text-bricket-gold' : 'text-bricket-grey/40 group-hover:text-bricket-grey'}`}>
                       {strength.number}
                     </span>
                     
-                    {/* Title */}
+                    {/* RESTORED: Crisp white text */}
                     <h3 className={`text-2xl md:text-3xl font-extrabold tracking-tight transition-colors duration-300 ${isOpen ? 'text-bricket-white' : 'text-bricket-grey group-hover:text-bricket-white'}`}>
                       {strength.title}
                     </h3>
                   </div>
 
-                  {/* Animated Plus/Minus Icon */}
+                  {/* RESTORED: Dark mode icon borders */}
                   <div className={`w-10 h-10 rounded-full border flex items-center justify-center shrink-0 transition-all duration-500 ${isOpen ? 'border-bricket-gold bg-bricket-gold/10 text-bricket-gold rotate-180' : 'border-bricket-white/10 text-bricket-grey group-hover:border-bricket-white/30 group-hover:text-bricket-white'}`}>
                     <svg 
                       className="w-5 h-5 transition-transform duration-500" 
@@ -72,17 +70,15 @@ export default function CoreStrengths() {
                       viewBox="0 0 24 24"
                     >
                       {isOpen ? (
-                        // Minus Icon
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
                       ) : (
-                        // Plus Icon
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                       )}
                     </svg>
                   </div>
                 </button>
 
-                {/* Accordion Body (The smooth expanding trick using CSS Grid) */}
+                {/* Accordion Body */}
                 <div 
                   className={`grid transition-all duration-500 ease-in-out ${
                     isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'

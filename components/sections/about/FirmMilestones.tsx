@@ -1,5 +1,5 @@
 import React from 'react';
-import { firmMilestones } from '../../data';
+import { firmMilestones } from '../../../data';
 
 export default function FirmMilestones() {
   return (

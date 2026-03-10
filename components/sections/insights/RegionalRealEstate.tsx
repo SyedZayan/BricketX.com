@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { regionalRealEstateData } from '../../data';
+import { regionalRealEstateData } from '../../../data';
 
 export default function RegionalRealEstate() {
   const [activeRegion, setActiveRegion] = useState<'uae' | 'pakistan'>('uae');

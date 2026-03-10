@@ -1,6 +1,6 @@
-import ProjectsHero from "@/components/sections/ProjectsHero";
-import ProjectsGallery from "@/components/sections/ProjectsGallery";
-import ProjectsCTA from "@/components/sections/ProjectsCTA";
+import ProjectsHero from "@/components/sections/project/ProjectsHero";
+import ProjectsGallery from "@/components/sections/project/ProjectsGallery";
+import ProjectsCTA from "@/components/sections/project/ProjectsCTA";
 
 export default function ProjectsPage() {
   return (

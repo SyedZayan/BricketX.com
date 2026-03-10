@@ -1,22 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { portfolioCompanies } from '../../data'; 
+import { portfolioCompanies } from '../../../data'; 
 
 export default function PortfolioGrid() {
   return (
     <section id="portfolio" className="w-full bg-[#fbf8f3] py-24 lg:py-40 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-24 lg:mb-32">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-bricket-dark tracking-tight mb-6">
-            Our established <span className="text-bricket-gold">portfolio</span>
-          </h2>
-          <p className="text-lg text-bricket-grey leading-relaxed">
-            BricketX operates a diverse ecosystem of specialized companies. Each brand is united by our core values of innovation, reliability, and excellence.
-          </p>
-        </div>
+
 
         {/* Alternating Grid */}
         <div className="flex flex-col gap-32 lg:gap-40">

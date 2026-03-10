@@ -1,6 +1,6 @@
-import OpportunitiesHero from "@/components/sections/OpportunitiesHero";
-import InvestmentCatalog from "@/components/sections/InvestmentCatalog";
-import OpportunitiesCTA from "@/components/sections/OpportunitiesCTA";
+import OpportunitiesHero from "@/components/sections/opportunities/OpportunitiesHero";
+import OpportunitiesCTA from "@/components/sections/opportunities/OpportunitiesCTA";
+import InvestmentCatalog from "@/components/sections/opportunities/InvestmentCatalog";
 
 export default function OpportunitiesPage() {
   return (

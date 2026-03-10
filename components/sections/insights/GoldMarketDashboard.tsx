@@ -1,5 +1,5 @@
 import React from 'react';
-import { goldPerformanceData } from '../../data';
+import { goldPerformanceData } from '../../../data';
 
 export default function GoldMarketDashboard() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { marqueeCompanies } from '../../data';
+import { marqueeCompanies } from '..//..//..//data';
 
 export default function PortfolioMarquee() {
   return (

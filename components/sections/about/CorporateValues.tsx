@@ -1,5 +1,5 @@
 import React from 'react';
-import { coreValues } from '../../data';
+import { coreValues } from '../../../data';
 
 export default function CorporateValues() {
   return (
