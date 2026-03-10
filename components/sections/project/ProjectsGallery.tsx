@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { projectsPortfolio } from '../../data';
+import { projectsPortfolio } from '../../../data';
 
 export default function ProjectsGallery() {
   const [activeFilter, setActiveFilter] = useState('All');

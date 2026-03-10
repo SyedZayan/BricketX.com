@@ -1,5 +1,5 @@
 import React from 'react';
-import { contactMethods } from '../../data';
+import { contactMethods } from '../../../data';
 
 export default function ContactInfoAndMap() {
   return (

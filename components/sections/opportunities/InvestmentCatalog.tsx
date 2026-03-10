@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { opportunities } from '../../data'; // Pulls from your data.ts file
+import { opportunities } from '../../../data'; // Pulls from your data.ts file
 
 export default function InvestmentCatalog() {
   const [activeFilter, setActiveFilter] = useState('All');
